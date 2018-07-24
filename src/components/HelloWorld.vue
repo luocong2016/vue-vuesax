@@ -7,7 +7,9 @@
       </ul>
     </div>
 
-    <vs-button v-for="(item, index) in colorList" :key="'vsbutton' + index" :vs-color="item" vs-type="border">{{item}}</vs-button>
+    <div class="center">
+      <vs-button v-for="(item, index) in colorList" :key="'vsbutton' + index" :vs-color="item" vs-type="border">{{item}}</vs-button>
+    </div>
 
     <vs-row v-for="(item, key) in [1, 2, 3, 4, 6, 12]" :key="'vsrow' + key">
       <vs-col v-for="(col,index) in item" :key="'vscol' + index" v-tooltip="'col - '+item" vs-type="flex" vs-justify="center" vs-align="center" :vs-w="12/item">

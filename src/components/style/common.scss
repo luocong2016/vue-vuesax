@@ -4,6 +4,17 @@ $danger: rgb(242, 19, 93);
 $warning: rgb(255, 130, 0);
 $dark: rgb(36, 33, 69);
 
+// 首字母大写
+.title-case {
+  text-transform: capitalize;
+}
+
+.center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .con-colors ul{
   display: flex;
   align-items: center;
